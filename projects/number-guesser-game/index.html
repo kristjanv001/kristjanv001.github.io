@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Number Guessing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="custom-styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Number Guessing Game</h1>
+      <!-- this div wraps the whole thing -->
+      <div id="game">
+        <!-- later generated with js -->
+        <p>
+          Guess a number between <span class="min-num"></span> and
+          <span class="max-num"></span>.
+        </p>
+        <input type="number" id="guess-input" placeholder="Enter your guess" />
+        <!-- <br> -->
+        <input
+          type="submit"
+          value="Submit"
+          id="guess-btn"
+          class="button-primary"
+        />
+        <input type="submit" value="Restart" id="restart-btn" />
+        <!-- we will insert a message with js - is the answer correct or not -->
+        <p class="message"></p>
+      </div>
+    </div>
+    <script type="text/javascript" src="tinycolor.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

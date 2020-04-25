@@ -1,0 +1,121 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: #282b42;
+  background-color: #eeeeef;
+}
+
+header {
+  padding: 20px 20px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 10px -2px rgba(0, 0, 0, 0.2);
+  color: HSL(216, 65.9%, 48.2%);
+}
+
+#header-p {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.849);
+}
+
+#header-q {
+  font-style: italic;
+  font-weight: 800;
+}
+
+main {
+  display: block;
+  max-width: 800px;
+  border-top: 6px solid gray;
+  border-bottom: 2px solid gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: white;
+}
+
+.wrap-content {
+  padding: 20px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  /* overflow: auto; */
+}
+
+h1 {
+  font-family: "Princess Sofia", cursive;
+
+  display: flex;
+  justify-content: center;
+  text-shadow: 0px 3px 5px rgb(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+#profile-image {
+  width: 100px;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+
+.main-img-div {
+  padding-right: 15px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+/* ------------------- */
+
+#img-div {
+  margin: 0 auto;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-caption {
+  font-size: 1rem;
+  padding: 20px 0;
+  color: gray;
+  text-align: center;
+}
+
+footer {
+  background-color: HSL(216, 65.9%, 48.2%);
+  height: 50px;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+#footer-txt {
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.float-right {
+  float: right;
+  color: red;
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin-left: 100px;
+    border-right: 1px dashed #ccc;
+    border-left: 1px dashed #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+}
