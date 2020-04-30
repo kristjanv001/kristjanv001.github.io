@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Number Guessing Game</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
-    />
-    <link rel="stylesheet" href="custom-styles.css" />
-  </head>
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Number Guesser Game</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png" /> -->
+  </head>
   <body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="container">
       <div class="row">
-        <div class="one-half column" style="margin-top: 25%;">
-          <h4>Number Guessing Game</h4>
-          <p>This is a fun little coding practice.</p>
-          <div id="game">
-            <!-- later generated with js -->
+        <div class="one-half column" style="margin-top: 5%;">
+          <h4>Number Guesser Game</h4>
+          <p>
+            This is a simple number guesser game. Good luck!
+          </p>
+          <div class="game">
             <p>
-              Guess a number between <span class="min-num"></span> and
-              <span class="max-num"></span>.
+              Pick a number between <span id="start-num"></span> and
+              <span id="end-num"></span>.
             </p>
             <input
+              id="input"
               type="number"
-              id="guess-input"
-              placeholder="Enter your guess"
+              placeholder="Write your number here"
             />
-            <!-- <br> -->
-            <input
-              type="submit"
-              value="Submit"
-              id="guess-btn"
-              class="button-primary"
-            />
-            <input type="submit" value="Restart" id="restart-btn" />
-            <!-- we will insert a message with js - is the answer correct or not -->
-            <p class="message"></p>
+            <input id="submit" type="submit" class="button-primary" />
+            <p id="status-text"></p>
           </div>
         </div>
       </div>
